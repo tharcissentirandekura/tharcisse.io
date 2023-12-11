@@ -1,7 +1,5 @@
 *{
-    padding: 0;
-    margin: 0;
-    font-family: Tahoma, sans-serif;
+    /* font-family: Tahoma, sans-serif; */
     box-sizing: border-box;
     }
     body{
@@ -14,144 +12,39 @@
         height: 100vh;
         width: 100%;
     }
-    nav{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding-top: 45px;
-        padding-left: 8%;
-        padding-right: 8%;
-        font-size: 20px;
-    }
-    .image{
 
-        align-items: center;
-        justify-content: space-between;
-        padding: 20px;
-        margin: 10px;
+    nav{
+        position: relative;
+        float: right;
+        font-size: 30px;
+
+    }
+
+    a{
+        position: relative;
+        color: azure;
+        margin-right: 30px;
+        top: 100px;
+        text-decoration: none;
+    }
+    .article{
+        position: relative;
+        top: 10em;
+        margin-left: 20%;
+        margin-right: 20%;
+        display: grid;
+        text-justify: inter-word;
+        justify-content: center;
+        align-self: center;
         
+        background-color: rgb(4, 38, 38);
     }
-    img{
-        position: relative;
-        border-radius: 10px;
-        height: auto;
-        width: 50%;
+
+    .text{
+        color: rgb(207, 210, 213);
+        font-size: 24px;
+        padding: 40px 40px 100px 40px;
+
     }
-    .logo{
-        color:white;
-        font-size: 25px;
-        letter-spacing: 4px;
-        cursor: pointer;
-    }
-    span{
-        color: rgb(42, 169, 174);
-    }
-    nav ul li{
-        list-style: none;
-        display: inline-block;
-        padding: 1px 25px;
+
     
-    }
-    nav ul li a{
-        color: white;
-        text-decoration: none;
-        font-weight: bold;
-        font-size: 18px;
-    
-    }
-    
-    li :hover{
-        text-decoration: underline;
-        color: aqua;
-        font-size: 20px;
-    }
-    
-    #link :hover{
-        font-size: 40px;
-        text-decoration: none;
-    }
-    
-    .btn{
-        background-color: crimson;
-        text-decoration: none;
-        color: white;
-        border: 2px solid transparent;
-        font-weight: bold;
-        padding: 10px 25px;
-        border-radius: 30px;
-        transition: transform .4s;
-    }
-    #link:hover,.btn:hover{
-        transform :scale(1.2);
-    
-    }
-    .content{
-        position:absolute;
-        top: 50%;
-        left: 8%;
-        transform: translateY(-50%);
-    }
-    .content h1{
-        position: relative;
-        color: white;
-        margin: 20px 0px 20px;
-        font-size: 55px;
-        bottom: 10%;
-    
-    }
-    .content .name:hover{
-        transition-duration: 0.4s;
-        color: #336bda;
-        transform: scale(1.2);
-    }
-    .about,.collatz,.neurons{
-        position: relative;
-        display: flex;
-        flex-wrap: wrap;
-        color: lightgrey;
-        font-size: 20px;
-        width: 70%;
-        padding: 30px;
-        margin: 30px;
-        align-items: normal;
-        bottom : 400px;
-        left: 60px;
-    
-    }
-    
-    .about :hover{
-        transition: transform .2s;
-        transition-duration: 2.10s;
-        width: 70%;  
-    }
-    
-    #resume,h4,.collatz,.neurons{
-        position: relative;
-        align-items: center;
-        bottom: 400px;
-        padding: 10 20px;
-        margin: 60px;
-    }
-    
-    #resume,h2,h4{
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 20px;
-        color: white;
-    }
-    
-    #portfolio{
-        position: relative;
-        margin-left: -130px;
-        margin-right: 40px;
-        display: flex;
-        flex-wrap: wrap;
-        
-    }
-    
-    .collatz, .neurons{
-        flex-grow: 10;
-        flex-basis: 20px;
-        color: white;
-        background-color: rgb(27, 4, 34);
-    
-    }
